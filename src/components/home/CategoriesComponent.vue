@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <q-card class="my-card bg-primary text-white sec-category">
-      <q-card-section>
+      <q-card-section style="border:0 0 0 0;">
 
 
         <div class="row justify-center">
@@ -31,11 +31,10 @@
          </div>
        </div>
 
-       <div class="row justify-center">
+       <div class="row justify-center" style="border: 0;">
          <!-- <div class="col- q-pa-md row items-start q-gutter-md" v-for="(category, index) in categories" :key="category.id">-->
-          <div class="col- q-pa-md row items-start q-gutter-md"> 
-             
-              <q-card class="my-card card-categories" @click="GotoFamilies(1)" >                
+             <div class="col- q-pa-md row items-start q-gutter-md"> 
+              <q-card class="my-card card-categories" @click="ShowSubFamilies(1)" >                
                 <q-item> 
                    <div class="row">  
                      <div class="col-12">        
@@ -160,13 +159,8 @@
             </div>
         </div>
      
-    
-
-
       </q-card-section>
 
-
-      <q-separator dark />
 
     </q-card>
 
@@ -377,11 +371,14 @@ export default defineComponent({
          // this.showNotif("Listo para ir a categorias", 'green-10')
          // return
      },
-     GotoFamilies(id: any){
+     ShowSubFamilies(id: any){
        this.showFamily = true;
        //this.$router.push({name : 'CategoryDetail', params : {id : id}})
        //this.$router.push({name : 'families'})
 
+     },
+     GotoFamilies(id: any){
+        this.$router.push({name : 'families', params : {id : id}})
      },
      searching () {
       if (this.search.length > 3) {
@@ -411,8 +408,11 @@ export default defineComponent({
 }
 
 .sec-category{
+
+  border: 0 0 0 0;
   border-radius: 0 ;
   box-shadow: 0 0 0 rgb(0 0 0 / 20%), 0 2px 2px rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%);
+  height: 550px;
 }
 
 
