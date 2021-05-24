@@ -34,14 +34,14 @@
        <div class="row justify-center">
          <!-- <div class="col- q-pa-md row items-start q-gutter-md" v-for="(category, index) in categories" :key="category.id">-->
           <div class="col- q-pa-md row items-start q-gutter-md"> 
-             <q-btn push round @click="GotoCategories()" >
-              <q-card class="my-card card-categories" >                
+             
+              <q-card class="my-card card-categories" @click="GotoFamilies(1)" >                
                 <q-item> 
                    <div class="row">  
                      <div class="col-12">        
                       <q-item-section>
                         <!--<q-img  :src="category.image"></q-img> -->
-                        <img src="../../../dist/img/meat.png" alt="">     
+                        <img src="../../../public/images/meat.png" alt="">     
                       </q-item-section> 
                        <q-item-section>
                           <!-- <q-item-label class="tittle-cat">{{ category.name}}</q-item-label>-->
@@ -51,7 +51,7 @@
                     </div>  
                 </q-item>    
               </q-card>
-              </q-btn>
+             
             </div>
 
             <div class="col- q-pa-md row items-start q-gutter-md"> 
@@ -62,7 +62,7 @@
                      <div class="col-12">        
                       <q-item-section>
                         <!--<q-img  :src="category.image"></q-img> -->
-                        <img src="../../../dist/img/drink.png" alt="">     
+                        <img src="../../../public/images/drink.png" alt="">     
                       </q-item-section> 
                        <q-item-section>
                           <!-- <q-item-label class="tittle-cat">{{ category.name}}</q-item-label>-->
@@ -83,7 +83,7 @@
                      <div class="col-12">        
                       <q-item-section>
                         <!--<q-img  :src="category.image"></q-img> -->
-                        <img src="../../../dist/img/food.png" alt="">     
+                        <img src="../../../public/images/food.png" alt="">     
                       </q-item-section> 
                        <q-item-section>
                           <!-- <q-item-label class="tittle-cat">{{ category.name}}</q-item-label>-->
@@ -104,7 +104,7 @@
                      <div class="col-12">        
                       <q-item-section>
                         <!--<q-img  :src="category.image"></q-img> -->
-                        <img src="../../../dist/img/health.png" alt="">     
+                        <img src="../../../public/images/health.png" alt="">     
                       </q-item-section> 
                        <q-item-section>
                           <!-- <q-item-label class="tittle-cat">{{ category.name}}</q-item-label>-->
@@ -125,7 +125,7 @@
                      <div class="col-12">        
                       <q-item-section>
                         <!--<q-img  :src="category.image"></q-img> -->
-                        <img src="../../../dist/img/shoes.png" alt="">     
+                        <img src="../../../public/images/shoes.png" alt="">     
                       </q-item-section> 
                        <q-item-section>
                           <!-- <q-item-label class="tittle-cat">{{ category.name}}</q-item-label>-->
@@ -146,7 +146,7 @@
                      <div class="col-12">        
                       <q-item-section>
                         <!--<q-img  :src="category.image"></q-img> -->
-                        <img src="../../../dist/img/exum_logo.png" alt="">     
+                        <img src="../../../public/images/iso.png" alt="">     
                       </q-item-section> 
                        <q-item-section>
                           <!-- <q-item-label class="tittle-cat">{{ category.name}}</q-item-label>-->
@@ -170,6 +170,161 @@
 
     </q-card>
 
+    <q-dialog persistent class="" v-model="showFamily" >
+        <q-card class="my-card" style="max-width:100%; width:60%">
+          <q-toolbar class="text-bluesito">
+            <q-toolbar-title class="title-session">
+                <p class="title-subcategories">Categorias de Alimentación</p>
+            </q-toolbar-title>
+            <q-btn flat icon="close" round v-close-popup />
+          </q-toolbar>
+          <q-separator />
+          <q-item class="q-pt-md">
+            <q-item-section>
+              <div class="row q-pt-md">
+                <div class="col-md-4 col-md q-px-md">
+                  <q-card class="my-card subcategories" @click="GotoFamilies(1)" >                
+                    <q-item> 
+                      <div class="row">  
+                        <div class="col-12">        
+                          <q-item-section>
+                            <!--<q-img  :src="category.image"></q-img> -->
+                            <img src="../../../public/images/meat.png" alt="">     
+                          </q-item-section> 
+                          <q-item-section>
+                              <!-- <q-item-label class="tittle-cat">{{ category.name}}</q-item-label>-->
+                              <q-item-label class="tittle-cat">Alimentación</q-item-label>
+                          </q-item-section> 
+                          </div>  
+                        </div>  
+                    </q-item>    
+                  </q-card>
+                </div>
+      
+                <div class="col-md-4 col-md q-px-md">
+                  <q-card class="my-card subcategories" @click="GotoFamilies(1)" >                
+                    <q-item> 
+                      <div class="row">  
+                        <div class="col-12">        
+                          <q-item-section>
+                            <!--<q-img  :src="category.image"></q-img> -->
+                            <img src="../../../public/images/meat.png" alt="">     
+                          </q-item-section> 
+                          <q-item-section>
+                              <!-- <q-item-label class="tittle-cat">{{ category.name}}</q-item-label>-->
+                              <q-item-label class="tittle-cat">Alimentación</q-item-label>
+                          </q-item-section> 
+                          </div>  
+                        </div>  
+                    </q-item>    
+                  </q-card>
+                </div>
+
+                <div class="col-md-4 col-md q-px-md">
+                  <q-card class="my-card subcategories" @click="GotoFamilies(1)" >                
+                    <q-item> 
+                      <div class="row">  
+                        <div class="col-12">        
+                          <q-item-section>
+                            <!--<q-img  :src="category.image"></q-img> -->
+                            <img src="../../../public/images/meat.png" alt="">     
+                          </q-item-section> 
+                          <q-item-section>
+                              <!-- <q-item-label class="tittle-cat">{{ category.name}}</q-item-label>-->
+                              <q-item-label class="tittle-cat">Alimentación</q-item-label>
+                          </q-item-section> 
+                          </div>  
+                        </div>  
+                    </q-item>    
+                  </q-card>
+                </div>
+
+
+                <div class="col-md-4 col-md q-px-md">
+                  <q-card class="my-card subcategories" @click="GotoFamilies(1)" >                
+                    <q-item> 
+                      <div class="row">  
+                        <div class="col-12">        
+                          <q-item-section>
+                            <!--<q-img  :src="category.image"></q-img> -->
+                            <img src="../../../public/images/meat.png" alt="">     
+                          </q-item-section> 
+                          <q-item-section>
+                              <!-- <q-item-label class="tittle-cat">{{ category.name}}</q-item-label>-->
+                              <q-item-label class="tittle-cat">Alimentación</q-item-label>
+                          </q-item-section> 
+                          </div>  
+                        </div>  
+                    </q-item>    
+                  </q-card>
+                </div>
+
+
+                <div class="col-md-4 col-md q-px-md">
+                  <q-card class="my-card subcategories" @click="GotoFamilies(1)" >                
+                    <q-item> 
+                      <div class="row">  
+                        <div class="col-12">        
+                          <q-item-section>
+                            <!--<q-img  :src="category.image"></q-img> -->
+                            <img src="../../../public/images/meat.png" alt="">     
+                          </q-item-section> 
+                          <q-item-section>
+                              <!-- <q-item-label class="tittle-cat">{{ category.name}}</q-item-label>-->
+                              <q-item-label class="tittle-cat">Alimentación</q-item-label>
+                          </q-item-section> 
+                          </div>  
+                        </div>  
+                    </q-item>    
+                  </q-card>
+                </div>
+
+
+                <div class="col-md-4 col-md q-px-md">
+                  <q-card class="my-card subcategories" @click="GotoFamilies(1)" >                
+                    <q-item> 
+                      <div class="row">  
+                        <div class="col-12">        
+                          <q-item-section>
+                            <!--<q-img  :src="category.image"></q-img> -->
+                            <img src="../../../public/images/meat.png" alt="">     
+                          </q-item-section> 
+                          <q-item-section>
+                              <!-- <q-item-label class="tittle-cat">{{ category.name}}</q-item-label>-->
+                              <q-item-label class="tittle-cat">Alimentación</q-item-label>
+                          </q-item-section> 
+                          </div>  
+                        </div>  
+                    </q-item>    
+                  </q-card>
+                </div>
+
+                  <div class="col-md-4 col-md q-px-md">
+                  <q-card class="my-card subcategories" @click="GotoFamilies(1)" >                
+                    <q-item> 
+                      <div class="row">  
+                        <div class="col-12">        
+                          <q-item-section>
+                            <!--<q-img  :src="category.image"></q-img> -->
+                            <img src="../../../public/images/meat.png" alt="">     
+                          </q-item-section> 
+                          <q-item-section>
+                              <!-- <q-item-label class="tittle-cat">{{ category.name}}</q-item-label>-->
+                              <q-item-label class="tittle-cat">Alimentación</q-item-label>
+                          </q-item-section> 
+                          </div>  
+                        </div>  
+                    </q-item>    
+                  </q-card>
+                </div>
+              </div>
+
+            </q-item-section>
+          </q-item>
+    
+        </q-card>
+      </q-dialog>  
+
     
   </div>
 
@@ -181,31 +336,52 @@
 import Vue from 'vue';
 import { Notify } from 'quasar'
 import { defineComponent } from '@vue/composition-api'
+import FamiliesService from '../../services/families/families.services'
+import { Loading } from "quasar";
 export default defineComponent({
   name: 'categories',
   // components: { ExampleComponent },
   data() {
 
       return {
+      families:[],
       lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       model: "Puerto Ordaz",
       options: [
         'Campo B Ferrominera', 'Unare III', 'Los Olivos', 'Alta Vista', 'Villa Africana'
       ],
       search : "",
-      categories : {}
+      categories : {},
+      showFamily : false
 
     }
   },
   mounted () {
 
+    this.GotoCategories();
+
   },
   methods: {
 
      GotoCategories(){
+
+        let subscription = FamiliesService.getFamilies().subscribe( {
+          next: (result : any) => {
+             this.families = result
+             console.log(this.families)
+            //Loading.hide()
+            //this.$router.back();
+          }
+        });
         
-          this.showNotif("Listo para ir a categorias", 'green-10')
-          return
+         // this.showNotif("Listo para ir a categorias", 'green-10')
+         // return
+     },
+     GotoFamilies(id: any){
+       this.showFamily = true;
+       //this.$router.push({name : 'CategoryDetail', params : {id : id}})
+       //this.$router.push({name : 'families'})
+
      },
      searching () {
       if (this.search.length > 3) {
@@ -238,6 +414,8 @@ export default defineComponent({
   border-radius: 0 ;
   box-shadow: 0 0 0 rgb(0 0 0 / 20%), 0 2px 2px rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%);
 }
+
+
 
 .tittle{
   font-family: 'ProximaNovaAltRegular';
@@ -287,23 +465,38 @@ export default defineComponent({
 .card-categories{
   padding: 3% 0 0 0;
   border-radius: 50%;
-  height: 130px;
-  width: 130px;
+  height: 120px;
+  width: 120px;
   text-align: center;
   align-items: center;
-  transition: all .5s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.card-categories:hover{
+  height: 140px;
+  width: 140px;
+  
 }
 
 
-
 .card-categories img{
+ 
   width: 70%;
   margin: 0 auto;
   align-items: center;
 }
 
+.card-categories:hover img{
+
+   filter: invert(0.2) sepia(1) hue-rotate(120deg) saturate(380%);
+   -webkit-filter: invert(0.2) sepia(1) hue-rotate(120deg) saturate(380%);
+ /* -webkit-filter:  hue-rotate(90deg);
+  filter:  hue-rotate(90deg);*/
+}
+
 .tittle-cat{
-  color: rgb(0, 0, 0);
+  color: #66728A;
   font-weight: 400;
   font-size: .8rem;
   margin: 2px 0 0 0;
@@ -327,6 +520,66 @@ export default defineComponent({
 .address-select{
   font-size: 1rem;
   width: 90%;
+  color: bisque;
 }
+
 }
+
+/* Sub-Categories*/
+.subcategories{
+
+  padding: 3% 0 0 0;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  text-align: center;
+  align-items: center;
+  transition: all .3s;
+  cursor: pointer;
+  margin: 7px 0;
+}
+
+.subcategories:hover{
+ background-color: #68D9A9;
+  
+}
+
+.title-subcategories{
+  font-family: 'ProximaNovaAltRegular';
+  color: #66728A;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin: 2px 0 0 0;
+  text-align: center;
+  
+}
+.subcategories img{
+ 
+  width: 70%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.subcategories:hover img{
+    filter: contrast(100%) grayscale(90%)
+ /* -webkit-filter:  hue-rotate(90deg);
+  filter:  hue-rotate(90deg);*/
+}
+
+
+
+.subcategories .tittle-cat{
+  font-family: 'ProximaNovaAltRegular';
+  color: #66728A;
+  font-weight: 400;
+  font-size: .8rem;
+  margin: 2px 0 0 0;
+}
+
+.subcategories:hover .tittle-cat{
+ color: #fff;
+}
+
+
+
 </style>

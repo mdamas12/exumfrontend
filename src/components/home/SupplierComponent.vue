@@ -1,5 +1,5 @@
 <template>
-    <q-card class="my-card bg-white text-black sec-category">
+    <q-card class="my-card bg-white text-black sec-suppliers">
       <q-card-section>
         <div class="row justify-center">
           <div class="col items-center">
@@ -8,12 +8,12 @@
         </div>
      </q-card-section>
      <div class="row justify-center"> 
-       <div class="col-12 q-pa-md row items-start q-gutter-md flex flex-center">
+       <div class="col-10 q-pa-md row items-start q-gutter-md flex flex-center">
          <div class="row justify-center">        
            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 q-pa-md row items-start q-gutter-md flex flex-center">
                 <q-card class="my-card suppliers" @click="GotoSupplier()">
                 <q-card-section>
-                    <q-img round class="img-supplier flex flex-center" src="../../../dist/img/supplier.png" />
+                    <q-img round class="img-supplier flex flex-center" src="../../../public/images/supplier.png" />
                 </q-card-section>
                 <q-card-section>
                     <p class="supplier-name">Name_Proveedor</p>
@@ -21,9 +21,9 @@
                     
              
                 <q-card-section horizontal>
-                    <q-img  class="img-product" src="../../../dist/img/img-supp1.png" />
-                    <q-img  class="img-product" src="../../../dist/img/img-supp2.png" />
-                    <q-img  class="img-product" src="../../../dist/img/img-supp3.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp1.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp2.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp3.png" />
                 </q-card-section>
                 <q-card-section>
                     <p class="supplier-pedidos">Pedido minimo 12€ | Envío 5€</p>
@@ -34,7 +34,7 @@
              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 q-pa-md row items-start q-gutter-md flex flex-center">
                 <q-card class="my-card suppliers" @click="GotoSupplier()">
                 <q-card-section>
-                    <q-img  class="img-supplier flex flex-center" src="../../../dist/img/supplier.png" />
+                    <q-img  class="img-supplier flex flex-center" src="../../../public/images/supplier.png" />
                 </q-card-section>
                 <q-card-section>
                     <p class="supplier-name">Name_Proveedor</p>
@@ -42,9 +42,9 @@
                     
             
                 <q-card-section horizontal>
-                    <q-img  class="img-product" src="../../../dist/img/img-supp1.png" />
-                    <q-img  class="img-product" src="../../../dist/img/img-supp2.png" />
-                    <q-img  class="img-product" src="../../../dist/img/img-supp3.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp1.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp2.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp3.png" />
                 </q-card-section>
                 <q-card-section>
                     <p class="supplier-pedidos">Pedido minimo 12€ | Envío 5€</p>
@@ -55,7 +55,7 @@
              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 q-pa-md row items-start q-gutter-md flex flex-center">
                 <q-card class="my-card suppliers" @click="GotoSupplier()">
                 <q-card-section>
-                    <q-img round class="img-supplier flex flex-center" src="../../../dist/img/supplier.png"/>
+                    <q-img round class="img-supplier flex flex-center" src="../../../public/images/supplier.png"/>
                 </q-card-section>
                 <q-card-section>
                     <p class="supplier-name">Name_Proveedor</p>
@@ -63,9 +63,9 @@
                     
                
                 <q-card-section horizontal>
-                    <q-img  class="img-product" src="../../../dist/img/img-supp1.png" />
-                    <q-img  class="img-product" src="../../../dist/img/img-supp2.png" />
-                    <q-img  class="img-product" src="../../../dist/img/img-supp3.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp1.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp2.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp3.png" />
                 </q-card-section>
                 <q-card-section>
                     <p class="supplier-pedidos">Pedido minimo 12€ | Envío 5€</p>
@@ -76,7 +76,7 @@
              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 q-pa-md row items-start q-gutter-md flex flex-center">
                 <q-card class="my-card suppliers" @click="GotoSupplier()">
                 <q-card-section>
-                    <q-img round class="img-supplier flex flex-center" src="../../../dist/img/supplier.png" />
+                    <q-img round class="img-supplier flex flex-center" src="../../../public/images/supplier.png" />
                 </q-card-section>
                 <q-card-section>
                     <p class="supplier-name">Name_Proveedor</p>
@@ -84,9 +84,9 @@
                     
                 <q-separator  />
                 <q-card-section horizontal>
-                    <q-img  class="img-product" src="../../../dist/img/img-supp1.png" />
-                    <q-img  class="img-product" src="../../../dist/img/img-supp2.png" />
-                    <q-img  class="img-product" src="../../../dist/img/img-supp3.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp1.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp2.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp3.png" />
                 </q-card-section>
                 <q-card-section>
                     <p class="supplier-pedidos">Pedido minimo 12€ | Envío 5€</p>
@@ -97,7 +97,7 @@
              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 q-pa-md row items-start q-gutter-md flex flex-center">
                 <q-card class="my-card suppliers" @click="GotoSupplier()">
                 <q-card-section>
-                    <q-img round class="img-supplier flex flex-center" src="../../../dist/img/supplier.png" />
+                    <q-img round class="img-supplier flex flex-center" src="../../../public/images/supplier.png" />
                 </q-card-section>
                 <q-card-section>
                     <p class="supplier-name">Name_Proveedor</p>
@@ -105,9 +105,9 @@
                     
                 <q-separator  />
                 <q-card-section horizontal>
-                    <q-img  class="img-product" src="../../../dist/img/img-supp1.png" />
-                    <q-img  class="img-product" src="../../../dist/img/img-supp2.png" />
-                    <q-img  class="img-product" src="../../../dist/img/img-supp3.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp1.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp2.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp3.png" />
                 </q-card-section>
                 <q-card-section>
                     <p class="supplier-pedidos">Pedido minimo 12€ | Envío 5€</p>
@@ -118,7 +118,7 @@
              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 q-pa-md row items-start q-gutter-md flex flex-center">
                 <q-card class="my-card suppliers" @click="GotoSupplier()">
                 <q-card-section>
-                    <q-img round class="img-supplier flex flex-center" src="../../../dist/img/supplier.png" />
+                    <q-img round class="img-supplier flex flex-center" src="../../../public/images/supplier.png" />
                 </q-card-section>
                 <q-card-section>
                     <p class="supplier-name">Name_Proveedor</p>
@@ -126,9 +126,9 @@
                     
                 <q-separator  />
                 <q-card-section horizontal>
-                    <q-img  class="img-product" src="../../../dist/img/img-supp1.png" />
-                    <q-img  class="img-product" src="../../../dist/img/img-supp2.png" />
-                    <q-img  class="img-product" src="../../../dist/img/img-supp3.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp1.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp2.png" />
+                    <q-img  class="img-product" src="../../../public/images/img-supp3.png" />
                 </q-card-section>
                 <q-card-section>
                     <p class="supplier-pedidos">Pedido minimo 12€ | Envío 5€</p>
@@ -139,7 +139,6 @@
        </div>
      </div>
 
-      <q-separator dark />
     </q-card>
     
 </template>
@@ -174,6 +173,11 @@ export default defineComponent({
 })
 </script>
 <style>
+.sec-suppliers{
+    border-bottom: none;
+    box-shadow: none;
+    border-radius: 0;
+}
  .tittle-section{
     font-family: 'ProximaNovaAltRegular';
     font-size: 3rem;
@@ -184,6 +188,7 @@ export default defineComponent({
  .suppliers{
      width: 100%;
      cursor: pointer;
+     border-bottom: none;
      
  }
  .img-supplier{
